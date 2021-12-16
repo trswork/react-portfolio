@@ -1,16 +1,28 @@
 import React from 'react';
-import Nav from './components/Nav';
-import About from './components/About';
 
-function App() {
+function Nav() {
+
   return (
-    <div>
-      <Nav></Nav>
-      <main>
-        <About></About>
-      </main>
-    </div>
+    <header>
+  <h2>
+    <a href="/">
+      <span role="img" aria-label="camera"> 📸</span> Oh Snap!
+    </a>
+  </h2>
+  <nav>
+    <ul className="flex-row">
+      <li className="mx-2">
+        <a href="#about">
+          About me
+        </a>
+      </li>
+      <li>
+        <span>Contact</span>
+      </li>
+    </ul>
+  </nav>
+</header>
   );
 }
 
-export default App;
+export default Nav;
